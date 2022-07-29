@@ -1,0 +1,85 @@
+/* ПОСТІЙНІ КЛІЄНТИ */
+.client-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--totle-text-color);
+  margin-top: 0;
+  
+
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+  }
+
+
+}
+
+.client__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.client__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--border);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.client__item:hover,
+.client__item:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.client__icon {
+  fill: currentColor;
+}

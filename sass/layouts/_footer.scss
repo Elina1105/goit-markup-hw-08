@@ -1,0 +1,52 @@
+/* ФУТЕР */
+/* Логотип */
+.footer {
+    flex-wrap: wrap;
+
+    &__logo {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    &__list .web {
+        color: var(--accent-color);
+    }
+
+    &__list .studio {
+        color: var(--primary-text-color);
+    }
+
+    &__list {
+        text-align: center;
+
+        @media screen and(min-width:768px) {
+            text-align: center;
+            margin-right: 165px;
+        }
+
+        @media screen and(min-width:1200px) {
+            text-align: start;
+            margin-right: 0;
+        }
+    }
+
+    &__address {
+        text-align: center;
+
+        @media screen and(min-width:768px) {
+            text-align: center;
+        }
+
+        @media screen and(min-width:1200px) {
+            text-align: start;
+        }
+    }
+}

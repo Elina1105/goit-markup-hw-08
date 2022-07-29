@@ -1,0 +1,70 @@
+/* ЧИМ МИ ЗАЙМАЄМЛСЬ */
+.work {
+    // @media (max-width: 480px) {
+    //     display: none;
+    // }
+
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}
+.work-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    color: var(--totle-text-color);
+}
+
+.work__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+}
+
+.work__images {
+    display: block;
+}
+
+.work__thumb {
+    position: relative;
+}
+
+.work__thumb::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    z-index: 1;
+}
+
+.work__app {
+    position: absolute;
+    bottom: 27px;
+    right: 82px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    z-index: 2;
+}
+
+.work__text {
+    margin: 0;
+}

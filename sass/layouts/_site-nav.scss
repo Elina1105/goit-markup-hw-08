@@ -1,0 +1,95 @@
+/* ПОСИЛАННЯ */
+
+.nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.site__nav.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
+}
+
+.site__nav-link:hover::after,
+.site__nav-link:focus::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  color: var(--accent-color);
+}
+
+.site__nav-link {
+  position: relative;
+  padding: 32px 0;
+
+  color: var(--totle-text-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition: -webkit-transform var(--transition);
+  transition: -webkit-transform var(--transition);
+  transition: transform var(--transition);
+  transition: transform var(--transition), -webkit-transform var(--transition);
+
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.site__nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site__nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  /* (ефект вжимання) */
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform var(--transition);
+  transition: -webkit-transform var(--transition);
+  transition: transform var(--transition);
+  transition: transform var(--transition), -webkit-transform var(--transition);
+}
+
+.site__nav-link--current::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+
+  transform: scaleX(1);
+  transition: var(--transition);
+}
+// .site__nav-link:hover,
+// .site__nav-link:focus{
+//   color: #2196F3;
+// }
+
+.site__nav-link--current {
+  color: var(--accent-color);
+}

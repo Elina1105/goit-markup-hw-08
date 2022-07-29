@@ -1,0 +1,21 @@
+:root {
+  --primary-text-color: #ffffff;
+  --totle-text-color: #212121;
+  --accent-color: #2196f3;
+  --other-text-color: #757575;
+
+  --primary-bgc: #e5e5e5;
+  --secondary-bgc: #f5f4fa;
+  --dark-bgc: #2f303a;
+  --hero-bgc: #c4c4c4;
+
+  --border: #afb1b8;
+
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}

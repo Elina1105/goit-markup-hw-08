@@ -1,0 +1,74 @@
+/* ФУТЕР */
+/* Соціальні мережі в футері */
+.footer__social {
+    width: 206px;
+    height: 80px;
+    margin: auto;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+}
+
+.footer__social-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.footer__social-networks {
+    margin-bottom: 30px;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__social-logo:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__social-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--primary-text-color);
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.footer__social-icon:hover,
+.footer__social-icon:focus {
+    background-color: var(--accent-color);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}

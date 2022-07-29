@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- ШАПКА САЙТУ-->
+  <header data-header class=" border">
+    <!-- Навігація сайту -->
+    <div class="header container">
+      <a href="#" class="header__logo">
+        <span class="header__web">Web</span><span class="header__studio">Studio</span>
+      </a>
+      <!--КНОПКИ МОБІЛЬНЕ МЕНЮ-->
+      <button type="button " class="mobile-menu-btn" data-menu-button>
+        <svg class="mobile-menu-icon" width="24" height="16">
+          <use class="mobile-menu-burger" href=".//images/sprite.svg#burger-menu"></use>
+          <use class="mobile-menu-close" href=".//images/sprite.svg#burger-close"></use>
+        </svg>
+      </button>
+
+      <!-- МОБІЛЬНЕ МЕНЮ-->
+      <div class="mobile-menu " data-menu>
+
+        <ul class="mobile-menu-nav list">
+          <li class="mobile-menu-nav-item">
+            <a class="link current" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="link" href="">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts list">
+          <li class="mobile-menu-contacts-item">
+            <a class="link accent" href="">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu-contacts-item">
+            <a class="link mail" href="">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-socials list">
+          <li class="mobile-menu-socials-item">
+            <a class="mobile-menu-social-link social-link" href="">Instagram</a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a class="mobile-menu-social-link social-link" href="">Twitter</a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a class="mobile-menu-social-link social-link" href="">Facebook</a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a class="mobile-menu-social-link social-link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+
+        <!-- ПОСИЛАННЯ -->
+
+      <nav class="nav">
+        <ul class="site__nav list">
+          <li class="site__nav-item">
+            <a href="./index.html" class="site__nav-link">Студия</a>
+          </li>
+          <li class="site__nav-item">
+            <a href="" class="site__nav-link site__nav-link--current">Портфолио</a>
+          </li>
+          <li class="site__nav-item">
+            <a href="" class="site__nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Навігація по авторизації  -->
+      <div class="header__nav">
+        <a href="info@devstudio.com" class="header__nav-adress header__nav-link">
+          <svg class="header__nav-icon" height="12" width="16">
+            <use href=".//images/sprite.svg#envelope"></use>
+          </svg>
+          info@devstudio.com</a>
+        <a href="" class="header__nav-adress header__nav-link">
+          <svg class="header__nav-icon" height="16" width="10">
+            <use href=".//images/sprite.svg#vector"></use>
+          </svg>
+          +38 096 111 11 11</a>
+      </div>
+    </div>
+  </header>
+  <!-- Main portfplio  -->
+  <main>
+    <!-- КНОПКИ ПО СТОРІНЦІ ПОРТФОЛІО -->
+    <section class="section portfolio">
+      <div class="container">
+        <!-- Невидимий заголовок -->
+        <h2 class="visually-hidden">Кнопки сайту</h2>
+        <!-- Кнопки -->
+        <ul class="buttons">
+          <li class="button__list">
+            <button type="button" class="buttons__button">Все</button>
+          </li>
+          <li class="button__list">
+            <button type="button" class="buttons__button">Веб-сайты</button>
+          </li>
+          <li class="button__list">
+            <button type="button" class="buttons__button">Приложения</button>
+          </li>
+          <li class="button__list">
+            <button type="button" class="buttons__button">Дизайн</button>
+          </li>
+          <li class="button__list">
+            <button type="button" class="buttons__button">Маркетинг</button>
+          </li>
+        </ul>
+        <!-- КАРТКИ -->
+        <ul class="portfolio__card">
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-1_lg.webp 1x, ./images/portfolio/port-1_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-1_md.webp 1x, ./images/portfolio/port-1_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-1_sm.webp 1x, ./images/portfolio/port-1_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-1_sm.webp" alt="Технокряк" weight="370" height="294"
+                    class="portfolio__img" />
+                </picture>
+                <div class="portfolio__action">
+                  <p class="portfolio__info">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера
+                    конкурентов.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Технокряк</h2>
+                <p class="portfolio__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-2_lg.webp 1x, ./images/portfolio/port-2_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-2_md.webp 1x, ./images/portfolio/port-2_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-2_sm.webp 1x, ./images/portfolio/port-2_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-2_sm.webp" alt="Design" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-3_lg.webp 1x, ./images/portfolio/port-3_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-3_md.webp 1x, ./images/portfolio/port-3_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-3_sm.webp 1x, ./images/portfolio/port-3_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-3_sm.webp" alt="Приложения" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Ресторан Seafood</h2>
+                <p class="portfolio__text">Приложение</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-4_lg.webp 1x, ./images/portfolio/port-4_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-4_md.webp 1x, ./images/portfolio/port-4_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-4_sm.webp 1x, ./images/portfolio/port-4_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-4_sm.webp" alt="Prime" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Проект Prime</h2>
+                <p class="portfolio__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-5_lg.webp 1x, ./images/portfolio/port-5_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-5_md.webp 1x, ./images/portfolio/port-5_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-5_sm.webp 1x, ./images/portfolio/port-5_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-5_sm.webp" alt="Boxes" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Проект Boxes</h2>
+                <p class="portfolio__text">Приложение</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-6_lg.webp 1x, ./images/portfolio/port-6_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-6_md.webp 1x, ./images/portfolio/port-6_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-6_sm.webp 1x, ./images/portfolio/port-6_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-6_sm.webp" alt="web-site" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                <p class="portfolio__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-7_lg.webp 1x, ./images/portfolio/port-7_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-7_md.webp 1x, ./images/portfolio/port-7_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-7_sm.webp 1x, ./images/portfolio/port-7_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-7_sm.webp" alt="Дизайн" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Издание Limited Edition</h2>
+                <p class="portfolio__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-8_lg.webp 1x, ./images/portfolio/port-8_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-8_md.webp 1x, ./images/portfolio/port-8_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-8_sm.webp 1x, ./images/portfolio/port-8_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-8_sm.webp" alt="Lab" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Проект LAB</h2>
+                <p class="portfolio__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__top">
+                <!-- Тег <picture> -->
+                <picture>
+                  <!-- Desctop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/port-9_lg.webp 1x, ./images/portfolio/port-9_lg.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/port-9_md.webp 1x, ./images/portfolio/port-9_md.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <!-- Mobil screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/port-9_sm.webp 1x, ./images/portfolio/port-9_sm.webp @2x.webp 2x"
+                    type="image/webp" />
+
+                  <img src="./images/portfolio/port-9_sm.webp" alt="Business" weight="370" height="294"
+                    class="portfolio__img" />
+                  <div class="portfolio__action">
+                    <p class="portfolio__info">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+              </div>
+              <div class="portfolio__card-name">
+                <h2 class="portfolio__title">Growing Business</h2>
+                <p class="portfolio__text">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!--FOOTER PORTFOLIO-->
+  <footer>
+    <div class="container footer">
+      <div class="footer__list">
+        <a href="" class="footer__logo">
+          <span class="web">Web</span><span class="studio">Studio</span>
+        </a>
+        <!-- Адрес в футері -->
+        <address>
+          <span class="footer__adress">г. Киев, пр-т Леси Украинки, 26<br /></span>
+          <a href="" class="footer__link footer__link--mail">info@example.com</a>
+          <a href="" class="footer__link">+38 099 111 11 11</a>
+        </address>
+      </div>
+      <!-- Соціальні мережі в футері -->
+      <div class="footer__social">
+        <p class="footer__social-text">присоединяйтесь</p>
+        <ul class="footer__social-networks">
+          <li class="footer__social-logo">
+            <a href="#" class="footer__social-icon">
+              <svg width="20" height="20">
+                <use href=".//images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-logo">
+            <a href="#" class="footer__social-icon">
+              <svg width="20" height="20">
+                <use href=".//images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__social-logo">
+            <a href="#" class="footer__social-icon">
+              <svg width="20" height="20">
+                <use href=".//images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__social-logo">
+            <a href="#" class="footer__social-icon">
+              <svg width="20" height="20">
+                <use href=".//images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Форма для розсилки -->
+      <div class="footer__form">
+        <h2 class="footer__form-title">Подпишитесь на рассылку</h2>
+        <form class="footer__form-filed">
+          <input class="footer__form-input" type="text" name="e-mail" id="e-mail" placeholder="E-mail" />
+          <button class="footer__button" type="submit">
+            <p class="footer__form-text">Подписаться</p>
+            <svg class="footer__form-icon" width="24" height="24">
+              <use href=".//images/submit-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+      </div>
+      </form>
+    </div>
+  </footer>
+
+  <script src=".//js/modal.js"></script>
+  <script src=".//js/menu.js"></script>
+</body>
+
+</html>
